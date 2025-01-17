@@ -56,8 +56,10 @@ while len(gestos_detectados) < len(senha_correta):
 cap.release()
 cv2.destroyAllWindows()
 
+print("\nSequência detectada: ")
 # Verificar se a sequência de gestos está correta
 if gestos_detectados == senha_correta:
+    print(gestos_detectados)
     print("Senha correta! Acesso liberado.")
 else:
     print(gestos_detectados)
